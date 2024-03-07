@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ProductoController">
+    <children>
+        <ListView fx:id="listaProductos" layoutX="31.0" layoutY="41.0" prefHeight="416.0" prefWidth="361.0" />
+        <ListView fx:id="listaSeleccionados" layoutX="401.0" layoutY="41.0" prefHeight="355.0" prefWidth="295.0" />
+        <Button layoutX="56.0" layoutY="470.0" mnemonicParsing="false" onAction="#agregarProducto" prefHeight="26.0" prefWidth="135.0" text="AGREGAR PRODUCTO" />
+        <Button layoutX="569.0" layoutY="444.0" mnemonicParsing="false" onAction="#generarFactura" prefHeight="26.0" prefWidth="126.0" text="GENERAR FACTURA" />
+        <Button layoutX="31.0" layoutY="9.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+      <TextField fx:id="totalTextField" layoutX="549.0" layoutY="407.0" onAction="#calcularTotalProductos" />
+      <Label layoutX="455.0" layoutY="411.0" text="TOTAL" />
+      <Button layoutX="237.0" layoutY="470.0" mnemonicParsing="false" onAction="#eliminarProducto" text="ELIMINAR PRODUCTO" />
+      <Button layoutX="407.0" layoutY="444.0" mnemonicParsing="false" onAction="#generarHistorico" text="GENERAR HISTORICO" />
+    </children>
+</AnchorPane>
